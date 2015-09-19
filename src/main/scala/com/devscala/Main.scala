@@ -1,3 +1,5 @@
+package com.devscala
+
 import java.util.Date
 
 
@@ -10,6 +12,10 @@ object Main extends Loggable {
     logger.trace("First log message - trace level")
 
     println("Started at " + new Date)
+
+    logTime("Creating 1 000 000 java.util.Date objects") {
+
+    }
 
   }
 
