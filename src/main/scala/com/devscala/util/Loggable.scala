@@ -14,7 +14,7 @@ trait Loggable {
    def logTime[T](msg: String)(code: => T): T = {
      val start = System.nanoTime()
      val res = code
-     logger.info(s"Time taken by $msg: ${TimeUnit.NANOSECONDS.toMillis(System.nanoTime() - start)} millis")
+     logger.info(s"Time taken by '$msg' is ${TimeUnit.NANOSECONDS.toMillis(System.nanoTime() - start)} millis")
      res
    }
 

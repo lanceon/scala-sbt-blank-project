@@ -19,6 +19,6 @@
     </root>
 
     <!-- default log levels for packages and classes -->
-    <logger name="Main" level="debug" />
+    <logger name="com.devscala.Main" level="debug" />
 
 </configuration>

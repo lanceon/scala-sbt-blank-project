@@ -1,11 +1,7 @@
 scala-sbt-blank-project
 =======================
 
-scala 2.11.7
-
-sbt 0.13.9
-
-logging (logback)
+scala 2.11.7, sbt 0.13.9, logging (logback)
 
 
 

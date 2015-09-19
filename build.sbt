@@ -7,7 +7,7 @@ version := "0.1"
 scalaVersion := "2.11.7"
 
 // See: https://github.com/sbt/sbt-assembly
-assemblyJarName in assembly := "project.jar"
+//assemblyJarName in assembly := "project.jar"
 
 scalacOptions ++= Seq(
   "-deprecation",
@@ -28,9 +28,12 @@ libraryDependencies ++= {
   )
 }
 
+mainClass in Compile := Some("com.devscala.Main")
+
 addCommandAlias("c", "compile") ++
 addCommandAlias("s", "container:start") ++
 addCommandAlias("q", "container:stop") ++
 addCommandAlias("qs", "; container:stop ;container:start") ++
 addCommandAlias("deps", "dependency-tree")
+
 
