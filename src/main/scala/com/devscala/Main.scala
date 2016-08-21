@@ -1,7 +1,6 @@
 package com.devscala
 
 import java.util.Date
-
 import com.devscala.util.Loggable
 
 
@@ -21,7 +20,7 @@ object Main extends Loggable {
 
     println("Started at " + new Date)
 
-    logTime("Creating 1 000 000 java.util.Date objects"){ testFunc }
+    logTime("Creating 1 000 000 java.util.Date objects"){ testFunc() }
 
   }
 

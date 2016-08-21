@@ -2,12 +2,10 @@ organization := "org.yourorganization"
 
 name := "scala sbt project"
 
-version := "0.1"
+version := "0.2"
 
-scalaVersion := "2.11.7"
+scalaVersion := "2.11.8"
 
-// See: https://github.com/sbt/sbt-assembly
-//assemblyJarName in assembly := "project.jar"
 
 scalacOptions ++= Seq(
   "-deprecation",
@@ -24,16 +22,12 @@ scalacOptions ++= Seq(
 
 libraryDependencies ++= {
   Seq(
-    "ch.qos.logback" % "logback-classic" % "1.1.2"
+    "ch.qos.logback" % "logback-classic" % "1.1.7"
   )
 }
 
 mainClass in Compile := Some("com.devscala.Main")
 
 addCommandAlias("c", "compile") ++
-addCommandAlias("s", "container:start") ++
-addCommandAlias("q", "container:stop") ++
-addCommandAlias("qs", "; container:stop ;container:start") ++
+addCommandAlias("r", "run") ++
 addCommandAlias("deps", "dependency-tree")
-
-

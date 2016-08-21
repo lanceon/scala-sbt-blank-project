@@ -1,11 +1,28 @@
 scala-sbt-blank-project
 =======================
 
-scala 2.11.7, sbt 0.13.9, logging (logback)
+Starter project for experiments with Scala and SBT.
+scala 2.11.8, sbt 0.13.12, logging (logback)
 
 
 
-Running from sbt:
+To setup from github via console git:
+
+    > git clone https://github.com/lanceon/scala-sbt-blank-project.git
+
+
+Install latest sbt tool from http://www.scala-sbt.org/ (0.13.12 at the moment).
+
+    > cd scala-sbt-blank-project
+    > sbt
+
+
+To compile from sbt:
+
+    > compile
+
+
+To run from sbt:
 
     > run
     [info] Running Main
@@ -15,11 +32,17 @@ Running from sbt:
     [success] Total time: 0 s, completed 19.09.2015 13:32:11
 
 
-Packaging (via sbt-assembly plugin) from sbt:
+To create JAR package (via sbt-assembly plugin) from sbt:
 
     > assembly
 
 
-Running:
+To view project dependencies (via sbt-dependency-graph plugin) from sbt:
 
-    java -jar "project.jar"
+    > deps
+
+    
+To run the JAR:  
+
+    > java -jar project.jar
+    
