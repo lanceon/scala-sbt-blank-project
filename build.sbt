@@ -4,7 +4,7 @@ name := "scala sbt project"
 
 version := "0.2"
 
-scalaVersion := "2.11.8"
+scalaVersion := "2.12.1"
 
 
 scalacOptions ++= Seq(
